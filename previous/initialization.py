@@ -87,8 +87,24 @@ class InitializationAnalyzer:
                 # Grave os novos estados e sinalize changed quando houver
                 # alteração. A convergência depende dos conjuntos, não de um
                 # número fixo de passadas. Não emita erros neste laço.
-                raise NotImplementedError("implemente a atualização até ponto fixo")
+
+                #ok como
+                #comparar incoming outgoing
+                #salvar incoming outgoing, incoming é algo parecido
+                #self.cfg.blocks[block_id], incoming
+                #compara o bloco de entrada
+                if incoming != facts.initialized_in[block_id]:
+                    facts.initialized_in[block_id] = incoming
+                    #Houve mudança, então loopa denovo
+                    changed = True
+                #verificar saida
+                if outgoing != facts.initialized_out[block_id]:
+                    #atualiza
+                    facts.initialized_out[block_id] = outgoing
+                    changed = True
+                
         return facts
+        raise NotImplementedError("implemente a atualização até ponto fixo")
 
     def _meet_predecessors(
         self, block_id: BlockId, facts: InitializationFacts,
@@ -96,4 +112,26 @@ class InitializationAnalyzer:
         predecessors = self.cfg.blocks[block_id].predecessors & self.reachable
         # TODO: interseção dos OUT destes predecessores. Não use união.
         # Nunca modifique um conjunto OUT ao calcular a interseção.
+        #predecessors lista  tudo o que é alcançavel que veioo antes do bloco atual
+        #não sie pq mas como o prof escreveu me deixa mó desconf, predecessors & self.reachable
+        #existem predecessores naõ alcançaeis?
+        #na real sim
+
+        #primeiro checar se existem predencessores alcançaveis, se nao isso é inutil
+        #retorna elemento 
+        if not predecessors:
+            return set(self.universe)
+
+        #cria uma cópia do conjunto de saída do primeiro predecessor para não modificar armazenados
+        #inicializando onde guardaremos os simpbolos
+        first = next(iter(predecessors))
+        initialized = set(facts.initialized_out[first])
+        #percorrer ele
+        for predecessor in predecessors:
+            #mantém  as variáveis que estão inicializadas  em todos os caminhos passados 
+            initialized.intersection_update(
+                facts.initialized_out[predecessor]
+            )
+
+        return initialized
         raise NotImplementedError("implemente a junção de inicialização")
