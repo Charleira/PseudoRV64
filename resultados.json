@@ -1,0 +1,372 @@
+{
+  "status": 0,
+  "seconds": 0.3440000000409782,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "pytest": "8.4.2",
+  "hashes": {
+    "D:\\PseudoRV64\\catalogue.py": "cb605350444c063532b557e14ecaa1ed151be93649015c7c6498da3c667590c1",
+    "D:\\PseudoRV64\\codegen.py": "8d9293f1fb5e20b42038f7bfad017cc284f360ad1cd6f016cd6f28c98efb34b6",
+    "D:\\PseudoRV64\\executor.py": "4bfc927e2bb5e3a2c7f5c625b80467066fee58c785abaf85457ef4d06a7fca76",
+    "D:\\PseudoRV64\\ir.py": "e7c2d67683755968225fa6cf3b73035193e2e038c4b1f257f05cab4c81ef732d",
+    "D:\\PseudoRV64\\load_previous.py": "1e1518cbe51f443251237b5a2b2e714f505b09da9382a83078dcf5050b642b0d",
+    "D:\\PseudoRV64\\patterns.py": "7e77a182729f244a607868efef5df606c37240035769e91c83b5fcdb3de6c080",
+    "D:\\PseudoRV64\\runner.py": "2c3ad3d0474cab94078d2166166aac1c973458bb55e692d97e30df35a95a3e56",
+    "D:\\PseudoRV64\\run_tests.py": "1bc0243af2938a114c69f3ab1c5f029f86c04c9927ae6849840742690eb06470",
+    "D:\\PseudoRV64\\selector.py": "36e3f7542b4dfe9e4f5f91cb9cf455a11c5c7aae8579db925f2a57a99e7478da",
+    "D:\\PseudoRV64\\tests\\conftest.py": "3dd309adf1d355fd9f849a874387838520db7ef281c29a90356d6423017e1ff4",
+    "D:\\PseudoRV64\\tests\\test_codegen.py": "1044797237c506f06fd842f0eaaf1e2b3c0b935155bac084ccb78941ebfa5222",
+    "D:\\PseudoRV64\\tests\\test_infrastructure.py": "684e998b1b50a34caf840f5dc4e9f0511f7522bd7e5bd460e1be5252669ac14a",
+    "D:\\PseudoRV64\\tests\\test_public_scenarios.py": "35bb3f9d8906a28a4ec62dbe5a289797ae878e03d128085156d9fe4961e60f80"
+  },
+  "collection_errors": [],
+  "cases": {
+    "PseudoRV64/tests/test_codegen.py::test_expressions[2+3-5]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[-7/3--2]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[-7%3--1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[2*8-16]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[3<=3-1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[3>=4-0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[true && !false-1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_expressions[false || true-1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_short_circuit_and_order": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_recursion_loop_shadowing": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_synthetic_dp": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_literal_classes[-2049]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_literal_classes[-2048]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_literal_classes[0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_literal_classes[2047]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_literal_classes[2048]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_direct_annotated_ast": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_instruction_selection[x+5-Addi]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_instruction_selection[-2048+x-Addi]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_instruction_selection[x*8-Slli]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_instruction_selection[8*x-Slli]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_codegen.py::test_direct_comparison_branch": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_manual_ir": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_bad_immediate": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_uninitialized_read": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_signed_division[-7-3--2--1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_signed_division[7--3--2-1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_signed_division[-7--3-2--1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_signed_division[-9223372036854775808--1--9223372036854775808-0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_step_limit": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_ownership_and_missing_target": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_infrastructure.py::test_dump_preserves_string_pool_contents": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[menor-<-expected0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[menor-<=-expected1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[menor->-expected2]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[menor->=-expected3]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[menor-==-expected4]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[menor-!=-expected5]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[igual-<-expected0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[igual-<=-expected1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[igual->-expected2]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[igual->=-expected3]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[igual-==-expected4]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_comparison_value_and_condition[igual-!=-expected5]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[return-false && mark()-false\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[return-true || mark()-true\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[return-true && mark()-M\\ntrue\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[return-false || mark()-M\\ntrue\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[argument-false && mark()-false\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[argument-true || mark()-true\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[argument-true && mark()-M\\ntrue\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_effect_contexts_public[argument-false || mark()-M\\ntrue\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_call_parameter_indices_public[0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_call_parameter_indices_public[9]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_parameter_order_with_observable_arguments": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_void_exit_and_discarded_call[return;-]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_void_exit_and_discarded_call[-]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_void_exit_and_discarded_call[print(\"fim\");-fim\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_statement_paths_public[int main() { int x; if (true) { x=7; } else { return 9; } return x; }-7]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_statement_paths_public[int main() { int x=5; while (false) { x=9; } return x; }-5]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_statement_paths_public[int main() { int x=0; while (x<5) { x=x+1; if (x==3) { return x; } } return 9; }-3]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_statement_paths_public[int main() { int x=1; { int x=8; print(x); } { x=x+2; } return x; }-3]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_print_decoded_strings_and_final_newline[\"a\" \"b\", \"\", true, -2-abtrue-2\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_print_decoded_strings_and_final_newline[\"linha\\\\n\", \"\\\\t\", false-linha\\n\\tfalse\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_integer_semantics_public[9223372036854775807 + 1--9223372036854775808]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_integer_semantics_public[(-9223372036854775807 - 1) / -1--9223372036854775808]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_integer_semantics_public[-7 / 3--2]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_integer_semantics_public[-7 % 3--1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_catalogue_costs_public[x+5-1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_catalogue_costs_public[x+2048-2]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_catalogue_costs_public[(x+5)*8-2]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_dp_requires_child_class[filho-sem-classe]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_dp_requires_child_class[filho-com-classe]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_dp_equal_cost_choices_are_stable": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_handout_examples[selecao.mc-12\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_handout_examples[curto_circuito.mc-M\\ntrue\\n]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_print_final_newline_uses_shared_string_pool": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[-2049]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[-2048]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[-2047]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[-1]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[0]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[2047]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[2048]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_selection[2049]": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_literal_on_left_stays_general": {
+      "result": "PASS",
+      "reason": ""
+    },
+    "PseudoRV64/tests/test_public_scenarios.py::test_subtraction_immediate_evaluates_call_once": {
+      "result": "PASS",
+      "reason": ""
+    }
+  }
+}
